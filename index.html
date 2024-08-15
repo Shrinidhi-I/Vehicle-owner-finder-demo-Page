@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Image Upload and Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="logo.jpg" alt="Logo" />
+                </a>
+            </div>
+            <a href="/" class="nav-link">Home</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <h1>Find Vehicle Owner</h1>
+        <div class="container">
+            <div class="upload-area" id="uploadArea">
+                <p class="abcd">Drag and drop an image here or click to upload</p>
+                <input type="file" id="fileInput" accept="image/*">
+                <div id="loading" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                </div>
+                <div id="uploadedImage" class="uploaded-image" style="display: none;">
+                </div>
+            </div>
+            <div class="result-area" id="resultArea" style="display: none;">
+                <h2>User Details</h2>
+                <div id="imageDetails">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
